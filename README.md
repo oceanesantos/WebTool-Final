@@ -14,50 +14,44 @@ Un outil créatif et intuitif qui génère une **animation 3D rotatif** à parti
 ## Les fonctionnalités principales (snippets)
 * **Importation multiple** : images ou courtes vidéos via sélection ou glisser-déposer.
 
-`` let n = items.length;
-  if (n === 0) {
-    fill(255);
-    textAlign(CENTER, CENTER);
-    textSize(20);
-    text("Importe des images ou vidéos pour lancer le carrousel", 0, 0);
-    pop();
-    return;
-  }``
+![Alt text](image-2.png)
 
 * **Affichage 3D (WebGL)** : disposition circulaire des médias sur des plans en rotation (effet carrousel).  
+
+![Alt text](image-1.png)
+
 * **Contrôles interactifs** :  
-  * 🖱️ **Drag** → rotation manuelle  
+  * 🖱️ **Drag** → rotation manuelle 
+![Alt text](image-4.png)
   * 🧭 **Molette** → zoom avant/arrière  
-  * 🎚️ **Curseurs** → vitesse, zoom, activation/désactivation de l’autoplay  
+![Alt text](image-5.png)
+  * 🎚️ **Curseurs** → vitesse, zoom, activation/désactivation de l’autoplay 
+![Alt text](image-6.png) 
 * **Personnalisation visuelle** :  
   * 🎨 Choix d’un fond coloré via *color picker*  
+![Alt text](image-7.png)
   
 * **Export vidéo** : sauvegarde automatique en `.webm`
+
+Géré grâce à la MediaRecorder API, native du navigateur :
+![Alt text](image-8.png)
+Export :
+![Alt text](image-9.png)
 
 ## Son UI / UX  
 
 * **Interface épurée** : un panneau latéral réunit les contrôles essentiels, tandis que la zone principale affiche le carrousel en temps réel.  
 * **Retour visuel immédiat** : chaque modification (vitesse, fond, ajout d’image) s’applique instantanément.  
 * **Prise en main fluide** : valeurs par défaut, mais contrôle précis pour les utilisateurs avancés.  
-* **Accessibilité renforcée** :  
-  * ⌨️ Navigation au clavier (flèches pour tourner, +/- pour zoomer)  
-  * 🌈 Contrastes forts et boutons de grande taille pour un confort d’utilisation optimal  
-
-## La structure du projet
-
-- 📁 **3D-Interactive-Carousel/**  
-  - `index.html` → structure principale du site et intégration des scripts  
-  - `style.css` → mise en forme et ergonomie de l’interface  
-  - `sketch.js` → logique p5.js : chargement des médias, rendu 3D, interactions et export vidéo
 
 ## Les évolutions possibles  
 
-* Ajout de **formes alternatives** (étoile, spirale, grille dynamique)  
+* Ajout de **formes alternatives** faites avec les images (étoile, spirale, grille dynamique)  
 * Intégration de **filtres visuels ou effets de transition**  
+Références d'idée d'amélioration : [Lien de l'inspiration](https://fr.pinterest.com/pin/278589926953392048/)
 * Export direct en **.mp4**  
 * Personnalisation avancée du fond (image, dégradé, vidéo, environnement 360°) 
 
-Références d'idée d'amélioration : [Lien de l'inspiration](https://fr.pinterest.com/pin/278589926953392048/)
 
 ## Les technologies  
 * **p5.js (WebGL)** — rendu 3D interactif  
