@@ -1,8 +1,14 @@
-html, body {
-  margin: 0;
-  padding: 0;
+*{box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+body,html,#app{margin:0;padding:0;height:100%}
+#app{display:flex;height:100vh;overflow:hidden}
+aside#controls{
+  width:300px;background:#111;color:#fff;padding:20px;display:flex;
+  flex-direction:column;gap:10px
 }
-
-canvas {
-  display: block;
-}
+#canvasWrap{flex:1;display:flex;align-items:center;justify-content:center;background:#000}
+.btn{background:#222;padding:8px 12px;border-radius:8px;cursor:pointer;display:inline-block}
+input[type=range]{width:100%}
+.control-row{margin:10px 0}
+button{cursor:pointer;background:#333;color:#fff;border:none;padding:8px 12px;border-radius:8px}
+button:disabled{opacity:0.5;cursor:not-allowed}
+.hint{font-size:12px;opacity:0.8;margin-top:auto}
