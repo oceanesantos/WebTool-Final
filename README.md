@@ -1,5 +1,7 @@
 # Carrousel 3D intéractif - Creative Coding
 
+![Alt text](image.png)
+
 ## L'idée 
 - Transformer ses images ou vidéos en un **carrousel 3D interactif** et personnalisable,
 - Importer ses médias, modifier l’apparence (fond, vitesse, zoom, rotation),
